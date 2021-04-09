@@ -12,7 +12,7 @@ public class DriveForward implements Behavior{
 	@Override
 	public boolean takeControl() {
 		return true;
-	}
+	} 
 
 	@Override
 	public void action() {

@@ -14,7 +14,7 @@ public class EscapePressed implements Behavior, KeyListener{
 		pilot = p;
 		Button.ESCAPE.addKeyListener(this);
 	}
-
+ 
 	@Override
 	public boolean takeControl() {
 		return escapePressed;

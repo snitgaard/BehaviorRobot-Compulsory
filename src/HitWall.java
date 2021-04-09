@@ -27,7 +27,7 @@ public class HitWall implements Behavior {
 		rightTouch = rTouch;
 		rangeFinder = rf;
 		pilot = p;
-	}
+	} 
 
 	@Override
 	public boolean takeControl() {

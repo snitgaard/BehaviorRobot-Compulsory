@@ -21,7 +21,7 @@ public class RobotMain {
 
 	public static void main(String[] args) {
 		Brick brick = BrickFinder.getDefault();
-		try
+		try 
 		(
 				RegulatedMotor leftMotor = new EV3LargeRegulatedMotor(brick.getPort("B"));
 				RegulatedMotor rightMotor = new EV3LargeRegulatedMotor(brick.getPort("C"));
@@ -40,11 +40,8 @@ public class RobotMain {
 			
 			MovePilot pilot = new MovePilot(chassis);
 			
-			pilot.setLinearSpeed(30); // cm per second
+			pilot.setLinearSpeed(30);
 			pilot.setLinearAcceleration(10);
-			
-			//pilot.setAngularSpeed(300);
-			//pilot.setAngularAcceleration(10);
 			
 			Behavior b1 = new DriveForward(pilot);
 			Behavior b2 = new HitWall(leftTouch, rightTouch, rf, pilot);
